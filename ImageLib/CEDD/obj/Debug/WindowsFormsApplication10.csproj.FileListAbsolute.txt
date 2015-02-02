@@ -1,0 +1,3 @@
+d:\Visual Studio 2008\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\ResolveAssemblyReference.cache
+d:\Visual Studio 2008\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.Properties.Resources.resources
+d:\Visual Studio 2008\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.csproj.GenerateResource.Cache

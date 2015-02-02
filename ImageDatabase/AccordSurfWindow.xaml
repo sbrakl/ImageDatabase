@@ -1,0 +1,8 @@
+﻿<Window x:Name="AccordSurfCompareWin" x:Class="ImageDatabase.AccordSurfWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AccordSurf" Height="640" Width="800" Loaded="AccordSurfCompareWin_Loaded">
+    <Grid>        
+        <Image Name="imageAccordCompare" Margin="0,25,0,-25" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

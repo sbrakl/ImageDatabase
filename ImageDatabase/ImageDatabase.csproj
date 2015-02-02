@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9579B57B-472C-4BF7-ACD1-836037E62ACC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageDatabase</RootNamespace>
+    <AssemblyName>ImageDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ImageDatabase.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord.Imaging, Version=2.14.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ThirdPartyDLLs\Accord\Accord.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning, Version=2.14.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RND\ImageCompare\SIMPLE\Demo_Framework\Demo_Framework\bin\Debug\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=2.14.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ThirdPartyDLLs\Accord\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=2.14.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ThirdPartyDLLs\Accord\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ThirdPartyDLLs\AForge\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ThirdPartyDLLs\AForge\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\Reference\ThirdPartyDLLs\OpenCVDlls\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU">
+      <HintPath>..\Reference\ThirdPartyDLLs\OpenCVDlls\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\Reference\ThirdPartyDLLs\OpenCVDlls\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\Reference\ThirdPartyDLLs\OpenCVDlls\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IntervalTreeLib">
+      <HintPath>..\Reference\ThirdPartyDLLs\IntervalTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LibSimilarImageDotNet">
+      <HintPath>..\Reference\ThirdPartyDLLs\LibSimilarImageDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Polenter.SharpSerializer">
+      <HintPath>..\Reference\ThirdPartyDLLs\Polenter.SharpSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\Reference\ThirdPartyDLLs\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AccordSurfWindow.xaml.cs">
+      <DependentUpon>AccordSurfWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DTOs\CEDDRecord.cs" />
+    <Compile Include="DTOs\LoCATeRecord.cs" />
+    <Compile Include="DTOs\SurfAccordDataSet.cs" />
+    <Compile Include="DTOs\SURFAccordRecord3.cs" />
+    <Compile Include="DTOs\SURFRecord2.cs" />
+    <Compile Include="DTOs\VectorDTOs.cs" />
+    <Compile Include="DTOs\ImageRecord.cs" />
+    <Compile Include="DTOs\BhattacharyyaRecord.cs" />
+    <Compile Include="DTOs\RGBProjectionRecord.cs" />
+    <Compile Include="DTOs\SURFRecord1.cs" />
+    <Compile Include="Helper\BinaryAlgoRepository.cs" />
+    <Compile Include="Helper\CacheHelper.cs" />
+    <Compile Include="Helper\DrawSurfMatches.cs" />
+    <Compile Include="Helper\ImagePathProperty.cs" />
+    <Compile Include="Helper\RandomNumber\MersenneTwister.cs" />
+    <Compile Include="Helper\RandomNumber\RandomHelper.cs" />
+    <Compile Include="Helper\Tree\CEDDTreeNode.cs" />
+    <Compile Include="Helper\Tree\IntervalTreeHelper.cs" />
+    <Compile Include="Helper\SurfRepository.cs" />
+    <Compile Include="Helper\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\MemorySize.cs" />
+    <Compile Include="Helper\BKTree\BKTree.cs" />
+    <Compile Include="Helper\BKTree\BKTreeNode.cs" />
+    <Compile Include="Helper\BKTree\DistanceMetric.cs" />
+    <Compile Include="Indexers\BhattacharyyaIndexer.cs" />
+    <Compile Include="Indexers\CEDDIndexer2.cs" />
+    <Compile Include="Indexers\CEDDIndexer.cs" />
+    <Compile Include="Indexers\RGBProjectionIndexer.cs" />
+    <Compile Include="Indexers\SurfIndexer3.cs" />
+    <Compile Include="Indexers\SurfIndexer2.cs" />
+    <Compile Include="Indexers\SurfIndexer1.cs" />
+    <Compile Include="Indexers\LocateIndexer.cs" />
+    <Compile Include="Indexers\SurfIndexer4.cs" />
+    <Compile Include="Query\CEDDQuery2.cs" />
+    <Compile Include="Query\LocateQuery.cs" />
+    <Compile Include="Query\SurfQuery2.cs" />
+    <Compile Include="Query\SurfQuery1.cs" />
+    <Compile Include="Query\CEDDQuery.cs" />
+    <Compile Include="Query\IImageQuery.cs" />
+    <Compile Include="Query\BhattacharyyaQuery.cs" />
+    <Compile Include="Query\pHashQuery.cs" />
+    <Compile Include="Query\RGBProjectQuery.cs" />
+    <Compile Include="Query\SurfQuery4.cs" />
+    <Compile Include="Query\SurfQuery3.cs" />
+    <Compile Include="Settings.cs" />
+    <Page Include="AccordSurfWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTOs\PHashImageRecord.cs" />
+    <Compile Include="Helper\DirectoryHelper.cs" />
+    <Compile Include="Indexers\emAlgo.cs" />
+    <Compile Include="Indexers\IIndexer.cs" />
+    <Compile Include="Indexers\pHashIndexer.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageLib\BhattacharyyaCompare\BhattacharyyaCompare.csproj">
+      <Project>{dc8448ec-0b56-4a9a-8503-a8c89ecd1208}</Project>
+      <Name>BhattacharyyaCompare</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLib\CEDD\CEDD-Descriptor.csproj">
+      <Project>{79fc77c3-fe3f-4b0a-b084-277f2b25d3cb}</Project>
+      <Name>CEDD-Descriptor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLib\SimilarImageFinderEyeOpen\SimilarImageFinderEyeOpen.Imaging.Processing.csproj">
+      <Project>{04e76f6b-3a28-418e-9083-21a3293b20c7}</Project>
+      <Name>SimilarImageFinderEyeOpen.Imaging.Processing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLib\SimpleSurfSift\SimpleSurfSift.csproj">
+      <Project>{cf08c6ef-4d4a-4f65-b390-3213a2505b46}</Project>
+      <Name>SimpleSurfSift</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\cvextern.dll">
+      <Link>x64\cvextern.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_calib3d2410.dll">
+      <Link>x64\opencv_calib3d2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_contrib2410.dll">
+      <Link>x64\opencv_contrib2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_core2410.dll">
+      <Link>x64\opencv_core2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_features2d2410.dll">
+      <Link>x64\opencv_features2d2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_flann2410.dll">
+      <Link>x64\opencv_flann2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_gpu2410.dll">
+      <Link>x64\opencv_gpu2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_highgui2410.dll">
+      <Link>x64\opencv_highgui2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_imgproc2410.dll">
+      <Link>x64\opencv_imgproc2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_legacy2410.dll">
+      <Link>x64\opencv_legacy2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_ml2410.dll">
+      <Link>x64\opencv_ml2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_nonfree2410.dll">
+      <Link>x64\opencv_nonfree2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_objdetect2410.dll">
+      <Link>x64\opencv_objdetect2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_photo2410.dll">
+      <Link>x64\opencv_photo2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_stitching2410.dll">
+      <Link>x64\opencv_stitching2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_superres2410.dll">
+      <Link>x64\opencv_superres2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_video2410.dll">
+      <Link>x64\opencv_video2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\OpenCVDlls\x64\opencv_videostab2410.dll">
+      <Link>x64\opencv_videostab2410.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\ThirdPartyDLLs\PowerCollections.dll">
+      <Link>PowerCollections.dll</Link>
+    </Content>
+    <Resource Include="ImageDatabase.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.0\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.0\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

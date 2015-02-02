@@ -1,0 +1,147 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Name="frmMain" x:Class="ImageDatabase.MainWindow"        
+        Title="Image Database" Height="425" Width="1094" Loaded="frmMain_Loaded" Icon="ImageDatabase.ico">
+    <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnIndex" Content="Calculate Index" HorizontalAlignment="Left" Margin="393,63,0,0" VerticalAlignment="Top" Width="92" Height="23" Click="btnIndex_Click" Grid.Row="1"/>
+        <Label Content="Index Directory : " HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="26" Width="100"/>
+        <TextBox x:Name="lblDirectoryPath" HorizontalAlignment="Left" Margin="116,15,0,0" TextWrapping="Wrap" Text="Index Path" IsReadOnly="True" VerticalAlignment="Top" Width="369" Height="49" Grid.RowSpan="2"/>
+        <ProgressBar x:Name="pbIndex" HorizontalAlignment="Left" Height="15" Margin="16,91,0,0" VerticalAlignment="Top" Width="469" Grid.Row="1"/>
+        <GroupBox Header="Query Image" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="177" Width="459" Grid.Row="1">
+            <Grid>
+                <Button x:Name="btnSelectQueryImage" Content="Select Image And Search" HorizontalAlignment="Left" Margin="16,18,0,0" VerticalAlignment="Top" Width="168" Height="32" Click="btnSelectQueryImage_Click"/>
+                <Button x:Name="btnQueryImage" Content="Only Search" HorizontalAlignment="Left" Margin="194,18,0,0" VerticalAlignment="Top" Width="95" Height="32" Click="btnQueryImage_Click"/>
+                <Border BorderThickness="1" BorderBrush="Black" Margin="303,10,10,10">
+                    <Image x:Name="imqQuery" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </Border>
+                <TextBox x:Name="txtQuery" HorizontalAlignment="Left" Margin="16,55,0,0" TextWrapping="Wrap" Text="Query Image Path" IsReadOnly="True" VerticalAlignment="Top" Height="51" Width="273"/>
+            </Grid>
+        </GroupBox>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" >
+            <TextBlock Text="Total images found: " Width="120" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+            <TextBlock Name="lblTotalCount" HorizontalAlignment="Left" Width="150"></TextBlock>
+        </StackPanel>
+
+
+        <GroupBox Header="Search Images" HorizontalAlignment="Stretch" Margin="11,0,0,0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1">
+            <ScrollViewer>
+                <ItemsControl x:Name="ImageList" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <!--<UniformGrid Columns="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>-->
+                            <WrapPanel  IsItemsHost="True" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Width="150" Height="160">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="120" />
+                                    <RowDefinition Height="15" />
+                                    <RowDefinition Height="15" />
+                                </Grid.RowDefinitions>
+                                <Border x:Name="brdImage" Grid.Row="0" BorderBrush="#FFFF9800" BorderThickness="3"  Width="120" Height="120" Padding="5" Margin="0" CornerRadius="10" 
+                                        ContextMenuOpening="brdImage_ContextMenuOpening" Tag="{Binding ImagePath}">
+                                    <!--Bind Image Path in Image Control-->
+                                    <Border.ContextMenu>
+                                        <ContextMenu x:Name="menuImageDetail">
+                                            <MenuItem x:Name="mnuOpenPic" Header="Open Image in System Viewer" Click="mnuOpenPic_Click" />
+                                            <MenuItem x:Name="mnuOpenSurfDetail" Header="Open SURF Detail View" Click="mnuOpenSurfDetail_Click" />
+                                        </ContextMenu>
+                                    </Border.ContextMenu>
+                                    <Image Source="{Binding ImagePath}" Stretch="Fill"  HorizontalAlignment="Center" />
+                                </Border>
+                                <TextBlock Grid.Row="1" x:Name="ImageName" Margin="1" Foreground="#FF787878" Text="{Binding ImageName}" HorizontalAlignment="Center"/>
+                                <TextBlock Grid.Row="2" x:Name="Distance" Margin="1" Foreground="#FF787878" Text="{Binding Distance, StringFormat=d \{0:N2\}}" FontStyle="Italic" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </GroupBox>
+        <ComboBox x:Name="cmbAlgo" HorizontalAlignment="Left" Margin="116,63,0,0" VerticalAlignment="Top" Width="169" IsReadOnly="True" Height="23" SelectionChanged="cmbAlgo_SelectionChanged" Grid.Row="1">
+            <ListBoxItem Content="pHash"/>
+            <ListBoxItem Content="RBGHistogram"/>
+            <ListBoxItem Content="bhattacharyya Coefficient"/>
+            <ListBoxItem Content="CEDD"/>
+            <ListBoxItem Content="SURF"/>
+            <ListBoxItem Content="Accord SURF"/>
+            <ListBoxItem Content="loCATe"/>
+        </ComboBox>
+        <Label Content="Index Algorithm: " HorizontalAlignment="Left" Margin="16,60,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="101"/>
+        <TextBlock x:Name="lblQueryStatus" HorizontalAlignment="Left" Margin="36,272,0,0" TextWrapping="Wrap" Text="Image Query Status" VerticalAlignment="Top" Width="269" Grid.Row="1" Height="32"/>
+        <Button x:Name="btnSelectFolder" Content="Select Folder" HorizontalAlignment="Left" Margin="16,20,0,0" VerticalAlignment="Top" Width="85" Height="28" RenderTransformOrigin="-3.326,-0.783" Click="btnSelectFolder_Click" Grid.Row="1"/>
+        <CheckBox x:Name="chkIndexAysc" Content="Exec in parallel" HorizontalAlignment="Left" Margin="290,67,0,0" VerticalAlignment="Top" Click="chkIndexAysc_Click" Grid.Row="1" Height="16" Width="95"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="446,110,0,0" VerticalAlignment="Top" Width="39" Background="#FFFF1515" Click="btnClear_Click" Height="25" Grid.Row="1"/>
+        <Button x:Name="btnShowHideSettings" Content="Show Settings" HorizontalAlignment="Left" Margin="351,110,0,0" VerticalAlignment="Top" Width="90" Background="#FF0CE433" Height="25" Visibility="Visible" Click="btnShowHideSettings_Click" Grid.Row="1"/>
+        <Grid Name="VectorSetting" Margin="10,147,30,1" Background="White" Visibility="Visible" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="181*"/>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="219*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox x:Name="grpSurf" Header="Surf Setting" HorizontalAlignment="Left" Margin="0,10,0,0" 
+                      VerticalAlignment="Top" Height="136" Width="433" Visibility="Hidden" Grid.ColumnSpan="3">
+                <Grid Margin="0,0,0,0">
+                    <TextBlock x:Name="lblSurfThreshold" Text="Threshold :" Margin="10,10,323,81"/>
+                    <ComboBox x:Name="cmbSurfThreshold" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="105" Height="23">
+                        <ListBoxItem Content="250"/>
+                        <ListBoxItem Content="500"/>
+                        <ListBoxItem Content="1000"/>
+                    </ComboBox>
+                    <TextBlock x:Name="lbl2" Text="Uniqueness Threshold :" Margin="10,46,105,44" TextWrapping="Wrap"/>
+                    <xctk:DoubleUpDown x:Name="nudsurfUniqueThreshold" HorizontalAlignment="Left" Margin="144,44,0,0" VerticalAlignment="Top" Value="0.8" Increment="0.1" Height="20" Width="64"/>
+                    <TextBlock x:Name="lbl3" Text="Good Match Threshold" Margin="10,77,105,19" TextWrapping="Wrap"/>
+                    <xctk:IntegerUpDown x:Name="nudsurfGoodMatchThreshold"  HorizontalAlignment="Left" Margin="144,75,0,0" VerticalAlignment="Top" Value="50" Increment="1" Height="20" Width="64"/>
+                    <TextBlock x:Name="lblSurfApproach" Text="Threshold :" Margin="228,10,105,81" RenderTransformOrigin="2.932,0.696"/>
+                    <ComboBox x:Name="cmbSurfApproach" HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top" Width="105" Height="23">
+                        <ListBoxItem Content="linear"/>
+                        <ListBoxItem Content="flann"/>
+                    </ComboBox>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="grpLocate" Header="Locate Setting" Margin="0,10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="3">
+                <Grid>
+                    <CheckBox x:Name="chkCreateCodeBook" Content="Create CodeBook" HorizontalAlignment="Left" Margin="24,19,0,0" VerticalAlignment="Top" Checked="CheckBox_changed" Unchecked="CheckBox_changed"/>
+                    <Button x:Name="btnSelectCodeBook" Content="Select CodeBook" HorizontalAlignment="Left" Margin="334,10,0,0" VerticalAlignment="Top" Width="104" Height="32" Click="btnSelectCodeBook_Click"/>
+                    <TextBox x:Name="txtCodeBookPath" HorizontalAlignment="Left" Height="43" Margin="20,64,0,0" TextWrapping="Wrap" Text="CodeBook Path" VerticalAlignment="Top" Width="414" IsReadOnly="True"/>
+                    <Label x:Name="lblCodeBookLength" Content="CodeBookLength: " HorizontalAlignment="Left" Margin="147,14,0,0" VerticalAlignment="Top" Width="113"/>
+                    <Label Content="Distance Threshold: " HorizontalAlignment="Left" Margin="20,112,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lblCodeBookMsg" Content="CodeBook would be create at" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="chkLTEScheme" Content="Apply LTC Scheme" HorizontalAlignment="Left" Margin="232,117,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                    <xctk:DoubleUpDown x:Name="nudLocateDistanceThreshold"  HorizontalAlignment="Left" Margin="143,116,0,0" VerticalAlignment="Top" Value="1.0" Height="20" Width="64" FormatString="0.00"/>
+                    <xctk:IntegerUpDown x:Name="nudCodeBookLength"  HorizontalAlignment="Left" Margin="265,15,0,0" VerticalAlignment="Top" Value="128" Increment="1" Height="20" Width="64"/>
+                    <Label x:Name="lblQueryAlgo" Content="Query Algo: " HorizontalAlignment="Left" Margin="16,143,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbLocateQueryAlgo" HorizontalAlignment="Left" Margin="143,144,0,0" VerticalAlignment="Top" Width="118" Height="24">
+                        <ListBoxItem Content="Simple"/>
+                        <ListBoxItem Content="Extended"/>
+                    </ComboBox>
+
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Name="CeddSetting" Margin="10,137,30,11" Background="White" Visibility="Hidden" Grid.Row="1">
+            <GroupBox x:Name="grpCEDD" Header="CEDD Setting" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="135" Width="435">
+                <Grid Margin="0,0,0,0">
+                    <TextBlock x:Name="lblCeddAlgoType" Text="CEDD Algorithm Type :" Margin="10,10,280,80"/>
+                    <ComboBox x:Name="cmbCeddAlgoType" HorizontalAlignment="Left" Margin="148,10,0,0" VerticalAlignment="Top" Width="129" Height="23" RenderTransformOrigin="1.124,0.652">
+                        <ListBoxItem Content="Linear"/>
+                        <ListBoxItem Content="BKTree"/>
+                    </ComboBox>
+                    <TextBlock x:Name="lblCutOffDistance" Text="Threshold :" Margin="10,38,280,52"/>
+                    <xctk:IntegerUpDown x:Name="nudCEDDGoodMatchThreshold" HorizontalAlignment="Left" Margin="148,41,0,0" VerticalAlignment="Top" Width="58" Value="35"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <TextBlock x:Name="lblIndexStatus" HorizontalAlignment="Left" Margin="10,111,0,0" TextWrapping="Wrap" Text="Indexing Status" VerticalAlignment="Top" Width="336" Grid.Row="1" Height="46"/>
+    </Grid>
+</Window>

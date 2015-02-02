@@ -1,0 +1,48 @@
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.dll
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.pdb
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.dll
+C:\Users\Savvash\Desktop\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.pdb
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.dll
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.pdb
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.dll
+C:\Users\Savvash\Desktop\My Descriptors\CEDD\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD (2)\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\bin\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\obj\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\WindowsFormsApplication10\obj\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\bin\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\bin\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\obj\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\obj\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_Ver1.1\CEDD\cedd_descriptor\obj\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\obj\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\obj\Debug\CEDD.Properties.Resources.resources
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\obj\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\bin\Debug\CEDD.dll
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\bin\Debug\CEDD.pdb
+C:\Users\Savvas\Desktop\CEDD_source\CEDD\cedd_descriptor\obj\Debug\CEDD.pdb
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\bin\Debug\CEDD.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\bin\Debug\CEDD.pdb
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\Debug\CEDD.Properties.Resources.resources
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\Debug\CEDD.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\Debug\CEDD.pdb

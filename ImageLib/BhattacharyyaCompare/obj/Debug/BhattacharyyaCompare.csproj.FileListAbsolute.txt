@@ -1,0 +1,4 @@
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\BhattacharyyaCompare\bin\Debug\BhattacharyyaCompare.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\BhattacharyyaCompare\bin\Debug\BhattacharyyaCompare.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\BhattacharyyaCompare\obj\Debug\BhattacharyyaCompare.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\BhattacharyyaCompare\obj\Debug\BhattacharyyaCompare.pdb

@@ -1,0 +1,27 @@
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\bin\Debug\SimpleSurfSift.dll
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\bin\Debug\SimpleSurfSift.pdb
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\bin\Debug\ZedGraph.dll
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\bin\Debug\ZedGraph.xml
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.dll
+d:\documents\visual studio 2013\Projects\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.pdb
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\SimpleSurfSift.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\SimpleSurfSift.pdb
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\Emgu.CV.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\Emgu.CV.UI.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\Emgu.Util.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\ZedGraph.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\bin\Debug\ZedGraph.xml
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\SIMPLE\SimpleSurfSift\SimpleSurfSift\SimpleSurfSift\obj\Debug\SimpleSurfSift.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\SimpleSurfSift.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\SimpleSurfSift.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\Emgu.CV.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\Emgu.CV.UI.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\Emgu.Util.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\ZedGraph.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\bin\Debug\ZedGraph.xml
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\obj\Debug\SimpleSurfSift.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\obj\Debug\SimpleSurfSift.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimpleSurfSift\obj\Debug\SimpleSurfSift.pdb

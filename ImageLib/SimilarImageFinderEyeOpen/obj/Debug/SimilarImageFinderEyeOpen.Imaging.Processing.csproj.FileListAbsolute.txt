@@ -1,0 +1,5 @@
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimilarImageFinderEyeOpen\bin\Debug\EyeOpen.Imaging.Processing.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimilarImageFinderEyeOpen\bin\Debug\EyeOpen.Imaging.Processing.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimilarImageFinderEyeOpen\obj\Debug\SimilarImageFinderEyeOpen.Imaging.Processing.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimilarImageFinderEyeOpen\obj\Debug\EyeOpen.Imaging.Processing.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\SimilarImageFinderEyeOpen\obj\Debug\EyeOpen.Imaging.Processing.pdb

@@ -1,0 +1,14 @@
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\bin\x86\Debug\CEDD.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\bin\x86\Debug\CEDD.pdb
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\x86\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\x86\Debug\CEDD.Properties.Resources.resources
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\x86\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\x86\Debug\CEDD.dll
+D:\Shabs Folder\Projects\RND\ImageCompare\ChristofirImageCompare\src\CEDD_source\cedd_descriptor\obj\x86\Debug\CEDD.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\bin\x86\Debug\CEDD_Descriptor.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\bin\x86\Debug\CEDD_Descriptor.pdb
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\obj\x86\Debug\CEDD-Descriptor.csprojResolveAssemblyReference.cache
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\obj\x86\Debug\CEDD_Descriptor.Properties.Resources.resources
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\obj\x86\Debug\CEDD-Descriptor.csproj.GenerateResource.Cache
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\obj\x86\Debug\CEDD_Descriptor.dll
+D:\Shabs Folder\Projects\ASH\Application\RND\ShabsEmguCVImpl\ImageLib\CEDD\obj\x86\Debug\CEDD_Descriptor.pdb

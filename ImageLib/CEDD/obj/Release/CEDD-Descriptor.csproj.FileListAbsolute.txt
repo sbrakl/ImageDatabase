@@ -1,0 +1,8 @@
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\ResolveAssemblyReference.cache
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\CEDD.Properties.Resources.resources
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\ResGen.read.1.tlog
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\ResGen.write.1.tlog
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\bin\Release\CEDD.dll
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\bin\Release\CEDD.pdb
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\CEDD.dll
+C:\Users\xaris\Desktop\CEDD\WindowsFormsApplication10\obj\Release\CEDD.pdb
